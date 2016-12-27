@@ -1,4 +1,5 @@
-## CHAT AND LEARN - AngularJS 1.5 Components
+# CHAT AND LEARN
+## AngularJS 1.5 Components
 
 Webinar source code
  

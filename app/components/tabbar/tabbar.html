@@ -1,0 +1,9 @@
+<div class="btn-group">
+  <button class="btn"
+          ng-class="{'btn-success': item.id === $ctrl.active.id}"
+          ng-repeat="item in $ctrl.items"
+          ng-click="$ctrl.itemClickHandler(item)">
+    {{item.label}}
+  </button>
+</div>
+<hr>

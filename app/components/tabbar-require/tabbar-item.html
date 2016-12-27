@@ -1,0 +1,7 @@
+  <button class="btn"
+          ng-class="{'btn-success': $ctrl.item.id === $ctrl.active.id}"
+          ng-click="$ctrl.itemClickHandler()">
+    {{$ctrl.item.label}}
+
+    <i class="fa fa-times" ng-click="$ctrl.itemDeleteHandler($event)"></i>
+  </button>

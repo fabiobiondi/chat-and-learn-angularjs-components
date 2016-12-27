@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" ng-app="demoApp">
+<head>
+  <meta charset="utf-8">
+  <title>Chat&Learn: Angular 1.5 components</title>
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/core.css">
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="app/App.js"></script>
+  <script src="app/MainCtrl.js"></script>
+  <script src="app/components/gmap/gmap.js"></script>
+  <!--simple tabbar-->
+  <script src="app/components/tabbar/tabbar.js"></script>
+  <!--nested tabbar-->
+  <script src="app/components/tabbar-nested/tabbar.js"></script>
+  <script src="app/components/tabbar-nested/tabbar-item.js"></script>
+  <!--tabbar with 'required'-->
+  <script src="app/components/tabbar-require/tabbar.js"></script>
+  <script src="app/components/tabbar-require/tabbar-item.js"></script>
+  <!--home component -->
+  <script src="app/views/home/home.view.js"></script>
+</head>
+
+<body class="row">
+  <!--left column-->
+  <div ng-controller="MainCtrl as ctrl" class="col-sm-6">
+    <h2>Component Based approach<br>(calback ('&') approach)</h2>
+    <!--Simple Tabbar-->
+    <tabbar items="ctrl.countries"
+            active="ctrl.country"
+            on-item-click="ctrl.updateMap($item)"></tabbar>
+
+    <pre>< tabbar-nested ></pre>
+    <tabbar-nested
+        items="ctrl.countries"
+        active="ctrl.country"
+        on-item-click="ctrl.updateMap($item)"
+        on-item-delete="ctrl.deleteCountry($item)"></tabbar-nested>
+
+    <gmap coords="{{ctrl.country.coords}}"></gmap>
+  </div>
+
+  <!--right column (totally component based approach)-->
+  <div class="col-sm-6">
+    <home></home>
+  </div>
+
+</body>
+</html>

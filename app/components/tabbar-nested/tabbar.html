@@ -1,0 +1,10 @@
+  <tabbar-nested-item
+          ng-repeat="item in $ctrl.items"
+          item="item"
+          active="$ctrl.active"
+          on-item-click="$ctrl.itemClickHandler($item)"
+          on-item-delete="$ctrl.itemDeleteHandler($item)"
+          >
+    {{item.label}}
+  </tabbar-nested-item>
+<hr>

@@ -1,12 +1,10 @@
 {
-  "name": "ngRoute example",
+  "name": "chat-and-learn-angularjs-components",
   "authors": [
     "Fabio Biondi <info@fabiobiondi.com>"
   ],
-  "description": "",
-  "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "http://www.fabiobiondi.com",
   "private": true,
   "ignore": [
     "**/.*",

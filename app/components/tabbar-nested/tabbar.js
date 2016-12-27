@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('demoApp')
+  angular.module('app')
     .component('tabbarNested', {
       bindings: {
         items: '<',

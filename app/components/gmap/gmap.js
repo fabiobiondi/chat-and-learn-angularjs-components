@@ -1,6 +1,5 @@
 (function () {
-
-  angular.module('demoApp')
+  angular.module('app')
     .component('gmap',  {
       bindings: {
         coords: ' @'

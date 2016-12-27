@@ -1,5 +1,5 @@
 (function() {
-  angular.module('demoApp')
+  angular.module('app')
     .component('home', {
       bindings: {},
       templateUrl: 'app/views/home/home.html',

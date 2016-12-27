@@ -10,7 +10,7 @@
         onItemDelete: '&'
       },
       templateUrl: 'app/components/tabbar-nested/tabbar.html',
-      controller: function () {
+      controller: function TabBarNestedController() {
         this.itemClickHandler = function (item) {
           this.onItemClick({ $item: item });
         }

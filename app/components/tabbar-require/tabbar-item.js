@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('app')
-    .component('tabbarRequiredItem', {
+    .component('tabbarRequireItem', {
       bindings: {
         item: '<',
         active: '<'
@@ -11,7 +11,7 @@
         home: '^home'
       },
       templateUrl: 'app/components/tabbar-require/tabbar-item.html',
-      controller: function () {
+      controller: function TabBarRequireItemController() {
 
         this.itemClickHandler = function () {
           // directly invoke 'home' controller methods

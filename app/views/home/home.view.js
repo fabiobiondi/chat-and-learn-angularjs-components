@@ -3,7 +3,7 @@
     .component('home', {
       bindings: {},
       templateUrl: 'app/views/home/home.html',
-      controller: function () {
+      controller: function HomeViewController() {
         this.countries = [
           { id:1,  label: 'Italy', coords: '41.29,12.57'},
           { id:2,  label: 'Japan', coords: '37.49,136.46'},

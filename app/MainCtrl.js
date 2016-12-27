@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('app')
-    .controller('MainCtrl', function MainCtrl() {
+    .controller('MainCtrl', function MainController() {
 
       this.countries = [
         { id:1,  label: 'Italy', coords: '41.29,12.57'},

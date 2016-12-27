@@ -9,7 +9,7 @@
         onItemClick: '&'
       },
       templateUrl: 'app/components/tabbar/tabbar.html',
-      controller: function () {
+      controller: function TabBarController () {
         this.itemClickHandler = function (item) {
           this.onItemClick({ $item: item})
         }

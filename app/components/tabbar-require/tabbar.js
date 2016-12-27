@@ -10,7 +10,7 @@
         onItemDelete: '&'
       },
       templateUrl: 'app/components/tabbar-require/tabbar.html',
-      controller: function () {
+      controller: function TabBarRequireController() {
         this.itemClickHandler = function (item) {
           this.onItemClick({ $item: item });
         }

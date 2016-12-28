@@ -3,13 +3,13 @@
 
 #### RUN DEMO
 
-1. Install dependencies
+1) Install dependencies
 
 ```
 bower install
 ```
 
-2. Use any webserver to navigate the demo
+2) Use any webserver to navigate the demo
   
 
 #### VIDEO

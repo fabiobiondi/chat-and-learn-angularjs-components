@@ -9,7 +9,7 @@
       template: '<img ng-if="$ctrl.coords" src="https://maps.googleapis.com/maps/api/staticmap?center={{$ctrl.coords}}&zoom=4&size=200x100">',
       controller: function () {
         this.$onChanges = function(changes) {
-          console.log (changes.coords.currentValue)
+          console.log ('changes', changes.coords.currentValue)
         }
       }
 

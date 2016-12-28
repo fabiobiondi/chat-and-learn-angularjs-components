@@ -11,6 +11,10 @@
         var el = $element.children()[0];
         var map = new google.maps.Map(el, { zoom: 5});
 
+        this.$onInit = function () {
+          console.log ('init', this.coords)
+        }
+
         // OnChange hook
         this.$onChanges = function (changes) {
           // Check if coords is undefined

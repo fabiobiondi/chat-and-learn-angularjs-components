@@ -5,7 +5,7 @@
       templateUrl: 'app/views/home/home.html',
       controller: function HomeViewController() {
         this.countries = [
-          { id:1,  label: 'Italy', coords: '41.29,12.57'},
+          { id:1,  label: 'Italy', coords: '41.33,12.57'},
           { id:2,  label: 'Japan', coords: '37.49,136.46'},
           { id:3,  label: 'USA' , coords: '37.6,-95.66'},
           { id:4,  label: 'Tunisia' , coords: '35.2,15.22'},

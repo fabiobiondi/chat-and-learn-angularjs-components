@@ -1,19 +1,15 @@
-  <h2>Totally Component Based approach<br>('require' approach)</h2>
-  <!--Simple Tabbar-->
-  <tabbar items="$ctrl.countries"
-          active="$ctrl.country"
-          on-item-click="$ctrl.updateMap($item)"></tabbar>
+<h2>Totally Component Based approach<br>('require' approach)</h2>
+<!--Simple Tabbar-->
+<tabbar items="$ctrl.countries"
+        active="$ctrl.country"
+        on-item-click="$ctrl.updateMap($item)"></tabbar>
 
-  <pre>< tabbar-required ></pre>
-  <tabbar-require
-      items="$ctrl.countries"
-      active="$ctrl.country"
-      on-item-click="$ctrl.updateMap($item)"
-      on-item-delete="$ctrl.deleteCountry($item)"></tabbar-require>
+<pre>< tabbar-required ></pre>
+<tabbar-require
+    items="$ctrl.countries"
+    active="$ctrl.country"
+    on-item-click="$ctrl.updateMap($item)"
+    on-item-delete="$ctrl.deleteCountry($item)"></tabbar-require>
 
-  <gmap coords="{{$ctrl.country.coords}}"></gmap>
+<map coords="$ctrl.country.coords"></map>
 
-  <hr>
-  <div class="alert alert-warning">
-    I prefer the technique used in < tabbar-nested > since it's very similar to that used in Angular2
-  </div>

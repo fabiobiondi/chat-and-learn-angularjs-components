@@ -9,9 +9,14 @@
   <link rel="stylesheet" href="css/core.css">
 
   <script src="bower_components/angular/angular.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAyMH-A99yD5fHQPz7uzqk8glNJYGEqus" type="text/javascript"></script>
+
   <script src="app/App.js"></script>
+  <!--controller-->
   <script src="app/MainCtrl.js"></script>
-  <script src="app/components/gmap/gmap.js"></script>
+  <!--maps-->
+  <script src="app/components/map/static-map.js"></script>
+  <script src="app/components/map/map.js"></script>
   <!--simple tabbar-->
   <script src="app/components/tabbar/tabbar.js"></script>
   <!--nested tabbar-->
@@ -40,7 +45,7 @@
         on-item-click="ctrl.updateMap($item)"
         on-item-delete="ctrl.deleteCountry($item)"></tabbar-nested>
 
-    <gmap coords="{{ctrl.country.coords}}"></gmap>
+    <static-map coords="{{ctrl.country.coords}}"></static-map>
   </div>
 
   <!--right column (totally component based approach)-->
